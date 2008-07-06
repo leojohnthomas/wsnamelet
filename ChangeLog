@@ -1,8 +1,14 @@
+2008-07-06  Alexandre Owen Muniz  <munizao@localhost.localdomain>
+
+	* wsname_applet.py(WSNameApplet._onToggled): Select text in entry when displaying it.
+
+	* configure.in: added AM_PO_SUBDIRS, bumped version to 0.2.0
+	
 2007-07-28  Alexandre Owen Muniz  <munizao@xprt.net>
 
 	* wsname_applet.py(WSNameEntryWindow): Move workspace name changing from entry changed signal to activate signal, which fixes nastiness where the entry would briefly be blank, causing the previous workspace name to be lost.
 	
-	* configure.in bumped version to 0.1.0, on account of the fix makeing the applet usable.
+	* configure.in: bumped version to 0.1.0, on account of the fix makeing the applet usable.
 
 2006-07-28  Alexandre Owen Muniz  <munizao@xprt.net>
 
