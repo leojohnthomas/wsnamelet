@@ -1,0 +1,33 @@
+<oaf_info>
+
+<oaf_server iid="OAFIID:GNOME_WorkspaceName_Factory"
+	    type="exe"
+	    location="@LIBEXECDIR@/wsname_applet.py">
+
+	<oaf_attribute name="repo_ids" type="stringv">
+		<item value="IDL:Bonobo/GenericFactory:1.0"/>
+		<item value="IDL:Bonobo/Unknown:1.0"/>
+	</oaf_attribute>
+	<oaf_attribute name="name" type="string" value="Workspace Name"/>
+	<oaf_attribute name="description" type="string" value="View and change the name of the current workspace"/>
+	<oaf_attribute name="panel:category" type="string" value="Desktop &amp; Windows"/>
+	<oaf_attribute name="panel:icon" type="string" value="wsnamelet.png"/>
+</oaf_server>
+
+<oaf_server iid="OAFIID:GNOME_WorkspaceName"
+	    type="factory" 
+	    location="OAFIID:GNOME_WorkspaceName_Factory">
+
+	<oaf_attribute name="repo_ids" type="stringv">
+		<item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+		<item value="IDL:Bonobo/Control:1.0"/>
+		<item value="IDL:Bonobo/Unknown:1.0"/>
+	</oaf_attribute>
+	<oaf_attribute name="name" type="string" value="Workspace Name"/>
+	<oaf_attribute name="description" type="string" value="View and change the name of the current workspace"/>
+	<oaf_attribute name="panel:category" type="string" value="Desktop &amp; Windows"/>
+	<oaf_attribute name="panel:icon" type="string" value="wsnamelet.png"/>
+
+</oaf_server>
+
+</oaf_info>
