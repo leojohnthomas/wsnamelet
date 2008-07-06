@@ -1,0 +1,19 @@
+AC_INIT(wsname_applet.py)
+
+AM_INIT_AUTOMAKE(wsnamelet, 0.1.0)
+
+AM_MAINTAINER_MODE
+AC_PROG_INTLTOOL([0.21])
+dnl check for python
+AM_PATH_PYTHON
+
+PKG_CHECK_MODULES(PYGTK, pygtk-2.0 gnome-python-2.0)
+AC_SUBST(PYGTK_CFLAGS)
+AC_SUBST(PYGTK_LIBS)
+
+
+AC_OUTPUT([
+Makefile
+wsnamelet_globals.py
+po/Makefile.in
+])

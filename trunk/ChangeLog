@@ -1,0 +1,17 @@
+2007-07-28  Alexandre Owen Muniz  <munizao@xprt.net>
+
+	* wsname_applet.py(WSNameEntryWindow): Move workspace name changing from entry changed signal to activate signal, which fixes nastiness where the entry would briefly be blank, causing the previous workspace name to be lost.
+	
+	* configure.in bumped version to 0.1.0, on account of the fix makeing the applet usable.
+
+2006-07-28  Alexandre Owen Muniz  <munizao@xprt.net>
+
+	* GNOME_WorkspaceNameApplet.server.in.in, Makefile.am, wsnamelet.png: added icon. 
+
+	* wsname_applet.py (WSNameEntryWindow._onActivate): Toggle button (and hide entry window) when enter is pressed.
+	(WSNameApplet._onToggled): disable tooltips while entry is shown (because the tooltip ends up obscuring the entry, which is annoying.)
+
+2006-07-08  Alexandre Owen Muniz  <munizao@xprt.net>
+
+	* Added ChangeLog.
+
