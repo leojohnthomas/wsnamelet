@@ -1,6 +1,6 @@
 AC_INIT(wsname_applet.py)
 
-AM_INIT_AUTOMAKE(wsnamelet, 0.2.0)
+AM_INIT_AUTOMAKE(wsnamelet, 0.9.0)
 
 AM_MAINTAINER_MODE
 AC_PROG_INTLTOOL([0.21])
