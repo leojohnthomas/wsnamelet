@@ -40,4 +40,6 @@ EXTRA_DIST =  			\
         intltool-extract.in     \
         intltool-merge.in       \
 	GNOME_WorkspaceNameApplet.server.in.in \
-        po/Makefile.in.in
+        po/Makefile.in.in \
+	po/POTFILES.in
+
